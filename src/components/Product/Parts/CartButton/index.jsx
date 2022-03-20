@@ -1,11 +1,27 @@
+import { useDispatch } from "react-redux";
+import { useProductContext } from "context";
+import { addProduct, removeProduct } from "store";
+import { useState } from "react";
 import * as Styles from "./styles";
 
 export function CartButton() {
+	const { data } = useProductContext();
+	const dispatch = useDispatch();
+
+	const [isProductInCart, setisProductInCart] = useState(false);
+
+	const handleCart = () => {
+		setisProductInCart((prev) => !prev);
+
+		if (!isProductInCart) dispatch(addProduct(data));
+		if (isProductInCart) dispatch(removeProduct(data.id));
+	};
+
 	return (
 		<Styles.CartButton
-			// isActive={data.isProductInCart}
-			// title={data.isProductInCart ? "Remove from cart" : "Add to cart"}
-			title="Add to cart"
+			isActive={isProductInCart}
+			title={isProductInCart ? "Remove from cart" : "Add to cart"}
+			onClick={handleCart}
 		>
 			<Styles.Icon>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">

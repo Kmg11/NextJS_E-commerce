@@ -9,8 +9,8 @@ export function HomePage() {
 
 	const productsList =
 		response &&
-		response.map((product, index) => (
-			<Product key={index} data={product} variant={productVariants.card} />
+		response.map((product) => (
+			<Product key={product.id} data={product} variant={productVariants.card} />
 		));
 
 	return (

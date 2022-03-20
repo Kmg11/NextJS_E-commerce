@@ -44,3 +44,14 @@ Create Product Component
 - Fetch Products From Json Server
 - Create Product Component
 - Create Products List In HomePage
+
+----------------------- Redux Redux Cart -----------------------
+
+Build Redux Cart & Connect With CartButton
+
+- Add id to db.json products to handle cart
+- Config Redux Cart
+	- Add To Cart
+	- Remove From Cart
+	- Clear Cart
+- Connect redux cart with Product CartButton Component
