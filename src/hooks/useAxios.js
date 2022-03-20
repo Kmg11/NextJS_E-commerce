@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import axios from "api/axios";
+import axios from "axios";
 
 /**
  * How To Use

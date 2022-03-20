@@ -100,7 +100,8 @@
 	- Move Docs To README.md
 
 - Clean
-	- CLean Not Used Fonts
+	- Remove Not Used Fonts
+	- Remove Not Colors
 
 ----------------------- Docs -----------------------
 ----------------------- Docs -----------------------

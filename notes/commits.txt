@@ -32,3 +32,15 @@ Initial Setup
 - Other
 	- Absoulte Paths
 	- Change App.js To App.jsx
+
+----------------------- Create Product Component -----------------------
+
+Create Product Component
+
+- Add API constant to constants folder
+- Install prop-types Package
+- Fix useAxios Custome Hook axios import
+- Add [useMediaQuery, useEventListener] Custome Hooks
+- Fetch Products From Json Server
+- Create Product Component
+- Create Products List In HomePage
