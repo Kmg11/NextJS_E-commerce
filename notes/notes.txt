@@ -1,0 +1,142 @@
+----------------------- Initial Setup -----------------------
+----------------------- Initial Setup -----------------------
+
+- [ Done ] Packages
+	- [ Done ] Install
+		- [ Done ] @reduxjs/toolkit react-redux
+		- [ Done ] styled-components
+		- [ Done ] react-router-dom
+		- [ Done ] axios
+	- [ Done ] Uninstall
+		- [ Done ] web-vitals
+
+- [ Done ] Setup
+	- [ Done ] Font Family
+	- [ Done ] Meta Tags
+	- [ Done ] Redux Store
+	- [ Done ] React Router
+	- [ Done ] Styled components
+	- [ Done ] Json Server
+		- [ Done ] Add db.json
+		- [ Done ] Add Script For Json Server
+
+- [ Done ] Struture
+	- [ Done ] components
+	- [ Done ] containers
+		- [ Done ] HomePage
+		- [ Done ] CartPage
+	- [ Done ] store
+	- [ Done ] constants
+	- [ Done ] styles
+		- [ Done ] Theme
+		- [ Done ] Global Styles
+	- [ Done ] hooks
+		- [ Done ] useAxios
+
+- [ Done ] Other
+	- [ Done ] Absoulte Paths
+	- [ Done ] Change App.js To App.jsx
+
+----------------------- components -----------------------
+----------------------- components -----------------------
+
+- Product
+	- images, title, price
+	- Add to cart button under each product
+	- On click on the product, open modal with more details
+
+- Navbar
+	- Cart Menu
+		- Badge with cart count
+		- On click, Show list of products in the cart
+		- Show a descriptive message if the cart is empty
+		- Checkout button, on click open cart page
+
+- Cart
+	- Client side pagination to move between the products
+
+----------------------- containers -----------------------
+----------------------- containers -----------------------
+
+- HomePage
+	- Navbar
+	- Products
+	- Pagination
+
+- CartPage
+	- Navbar
+	- Products
+
+----------------------- store -----------------------
+----------------------- store -----------------------
+
+- Cart
+	- Add To Cart
+	- Remove From Cart
+	- Set Product Qunatity
+	- Clear Cart
+	- Save In Local Storage
+
+----------------------- Other Notes -----------------------
+----------------------- Other Notes -----------------------
+
+- 
+
+----------------------- After Finish -----------------------
+----------------------- After Finish -----------------------
+
+- Check
+	- Performance
+	- Accessibility
+	- Best Practices
+	- Responsive
+	- Code Structure
+	- Code Quality
+
+- Do
+	- Documentation For Code
+	- How To Use [ README.md ]
+	- Make Repo Public
+	- Move Docs To README.md
+
+- Clean
+	- CLean Not Used Fonts
+
+----------------------- Docs -----------------------
+----------------------- Docs -----------------------
+
+- All paths is absoulte reference to src folder
+	- Don't use "../components"
+	- Use "components"
+
+- All main folders like "components", "containers", "store"
+	- have index.js file to collect all exports from them to simplify imports
+
+- All folders that not have direct component start with small letter
+	- like "components", "containers", "store"
+
+- All components folders start with capital letter
+	- like "HomePage", "Navbar"
+
+- All exports is named export to avoid default export problems
+
+- Struture
+	- components: Contain all components that used by many pages
+		- Navbar
+		- Product
+
+	- containers: Contain pages and there components
+		- HomePage
+		- CartPage
+
+	- store: Contain all redux logic [ store, reducers, actions ]
+		- Cart
+
+	- constants: Contain all constants that used by many components
+		- ROUTES
+
+	- hooks: Contain all hooks that used by many components
+		- useAxios
+
+	- styles: Contain all styles that used by many components
+		- globalStyles

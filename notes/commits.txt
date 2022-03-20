@@ -1,0 +1,34 @@
+----------------------- Initial Setup -----------------------
+
+Initial Setup
+
+- Clean Files
+
+- Packages
+	- Install [ @reduxjs/toolkit, react-redux, styled-components, react-router-dom, axios ]
+	- Uninstall [ web-vitals ]
+
+- Setup
+	- Font Family
+	- Meta Tags
+	- Redux Store
+	- React Router
+	- Styled components
+	- Json Server
+
+- Struture
+	- components
+	- containers
+		- HomePage
+		- CartPage
+	- store
+	- constants
+	- hooks
+		- useAxios
+	- styles
+		- Theme
+		- Global Styles
+
+- Other
+	- Absoulte Paths
+	- Change App.js To App.jsx
