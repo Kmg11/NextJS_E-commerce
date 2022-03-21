@@ -55,3 +55,10 @@ Build Redux Cart & Connect With CartButton
 	- Remove From Cart
 	- Clear Cart
 - Connect redux cart with Product CartButton Component
+
+----------------------- HomePage Pagination -----------------------
+
+HomePage Pagination
+
+- Create new component in HomePage to handle products & pagination
+- Add error message if the user go to invalid1 page

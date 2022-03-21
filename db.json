@@ -287,6 +287,38 @@
 				"https://images.pexels.com/photos/35191/shoes-leather-single-fashion.jpg?cs=srgb&dl=brown-casual-comfort-35191.jpg&fm=jpg",
 				"https://images.pexels.com/photos/54334/running-shoe-shoe-brooks-highly-functional-54334.jpeg?cs=srgb&dl=footwear-shoe-sneakers-54334.jpg&fm=jpg"
 			]
+		},
+		{
+			"id": 19,
+			"name": "Comba Leather And Suede Trainers",
+			"description": "These classic and sport-inspired Lacoste Trainers crafted in leather and suede are enlivened with colored bands on the sides. A winning style for summer strolls.",
+			"rate": "4",
+			"reviewsCount": "73",
+			"price": "2300",
+			"featuredProduct": false,
+			"featuredPhoto": "https://images.pexels.com/photos/66259/sports-shoes-running-shoes-sneakers-marathon-shoes-66259.jpeg?cs=srgb&dl=footwear-sneakers-66259.jpg&fm=jpg",
+			"photos": [
+				"https://images.pexels.com/photos/66259/sports-shoes-running-shoes-sneakers-marathon-shoes-66259.jpeg?cs=srgb&dl=footwear-sneakers-66259.jpg&fm=jpg",
+				"https://images.pexels.com/photos/35674/shoes-leather-pair-fashion.jpg?cs=srgb&dl=footwear-pair-of-shoes-35674.jpg&fm=jpg",
+				"https://images.pexels.com/photos/35191/shoes-leather-single-fashion.jpg?cs=srgb&dl=brown-casual-comfort-35191.jpg&fm=jpg",
+				"https://images.pexels.com/photos/54334/running-shoe-shoe-brooks-highly-functional-54334.jpeg?cs=srgb&dl=footwear-shoe-sneakers-54334.jpg&fm=jpg"
+			]
+		},
+		{
+			"id": 20,
+			"name": "Comba Leather And Suede Trainers",
+			"description": "These classic and sport-inspired Lacoste Trainers crafted in leather and suede are enlivened with colored bands on the sides. A winning style for summer strolls.",
+			"rate": "3.5",
+			"reviewsCount": "55",
+			"price": "1300",
+			"featuredProduct": false,
+			"featuredPhoto": "https://images.pexels.com/photos/1619652/pexels-photo-1619652.jpeg?cs=srgb&dl=footwear-gray-lace-tie-1619652.jpg&fm=jpg",
+			"photos": [
+				"https://images.pexels.com/photos/1619652/pexels-photo-1619652.jpeg?cs=srgb&dl=footwear-gray-lace-tie-1619652.jpg&fm=jpg",
+				"https://images.pexels.com/photos/35674/shoes-leather-pair-fashion.jpg?cs=srgb&dl=footwear-pair-of-shoes-35674.jpg&fm=jpg",
+				"https://images.pexels.com/photos/35191/shoes-leather-single-fashion.jpg?cs=srgb&dl=brown-casual-comfort-35191.jpg&fm=jpg",
+				"https://images.pexels.com/photos/54334/running-shoe-shoe-brooks-highly-functional-54334.jpeg?cs=srgb&dl=footwear-shoe-sneakers-54334.jpg&fm=jpg"
+			]
 		}
 	]
 }
