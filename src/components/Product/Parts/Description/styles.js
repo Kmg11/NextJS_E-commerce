@@ -4,5 +4,6 @@ export const Description = styled.p`
 	color: #666;
 	font-size: 0.975rem;
 	line-height: 1.6;
+	margin-top: 10px;
 	margin-bottom: 10px;
 `;

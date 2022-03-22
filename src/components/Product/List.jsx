@@ -1,21 +1,20 @@
-import { Description, Price, Rating, CartButton, Image } from "./Parts";
-import { Name } from "./Parts/Name";
+import { Name, Description, Price, Rating, CartButton, Image } from "./Parts";
 import * as Styles from "./styles";
 
 export function List() {
 	return (
-		<Styles.Box type="list">
+		<Styles.List>
 			<Image />
 
 			<Styles.Info>
 				<Name />
 				<Rating />
 				<Description />
-				<Price />
 				<Styles.Grid>
+					<Price />
 					<CartButton />
 				</Styles.Grid>
 			</Styles.Info>
-		</Styles.Box>
+		</Styles.List>
 	);
 }

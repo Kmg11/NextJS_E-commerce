@@ -62,3 +62,12 @@ HomePage Pagination
 
 - Create new component in HomePage to handle products & pagination
 - Add error message if the user go to invalid1 page
+
+----------------------- Product Model -----------------------
+
+Create Product Model
+
+- Create Product Modal
+- Add swiper Slider Package
+- Add [ useEsc, useToggle ] Custome Hooks
+- Add model div to index.html

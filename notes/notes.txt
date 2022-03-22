@@ -41,9 +41,9 @@
 ----------------------- components -----------------------
 
 - Product
-	- images, title, price
-	- Add to cart button under each product
-	- On click on the product, open modal with more details
+	- [ Done ] images, name, price
+	- [ Done ] Add to cart button under each product
+	- [ Done ] On click on the product, open modal with more details
 
 - Navbar
 	- Cart Menu
@@ -60,8 +60,8 @@
 
 - HomePage
 	- Navbar
-	- Products
-	- Pagination
+	- [ Done ] Products
+	- [ Done ] Pagination
 
 - CartPage
 	- Navbar
@@ -71,16 +71,22 @@
 ----------------------- store -----------------------
 
 - Cart
-	- Add To Cart
-	- Remove From Cart
+	- [ Done ] Add To Cart
+	- [ Done ] Remove From Cart
+	- [ Done ] Clear Cart
 	- Set Product Qunatity
-	- Clear Cart
 	- Save In Local Storage
 
 ----------------------- Other Notes -----------------------
 ----------------------- Other Notes -----------------------
 
-- 
+- Add useClickOutside Hook For Product Model
+- memo images
+- Add Loading To HomePage
+- Rerender in product
+- Featured Product
+- Memo Products In The HomePage
+- Add Linitation To Product [ Name, Description ]
 
 ----------------------- After Finish -----------------------
 ----------------------- After Finish -----------------------

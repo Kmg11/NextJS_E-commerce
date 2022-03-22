@@ -1,11 +1,22 @@
-import { Image, Price, Rating } from "./Parts";
-import { CartButton } from "./Parts/CartButton";
-import { Name } from "./Parts/Name";
+import { useProductContext } from "context";
+import { Name, Price, Rating, CartButton, Image } from "./Parts";
 import * as Styles from "./styles";
 
 export function Card() {
+	const { modelState } = useProductContext();
+
+	const shouldOpen = !modelState.isModelOpen
+		? "Open Product Model"
+		: "Close Product Model";
+
 	return (
-		<Styles.Box type="card">
+		<Styles.Cart>
+			<Styles.OverlayButton
+				onClick={() => modelState.handleToggleModel(true)}
+				title={shouldOpen}
+				aria-label={shouldOpen}
+			/>
+
 			<Image />
 
 			<Styles.Info>
@@ -16,6 +27,6 @@ export function Card() {
 					<CartButton />
 				</Styles.Grid>
 			</Styles.Info>
-		</Styles.Box>
+		</Styles.Cart>
 	);
 }
