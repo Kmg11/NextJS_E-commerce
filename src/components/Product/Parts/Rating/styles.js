@@ -6,7 +6,7 @@ export const Rating = styled.div`
 	align-items: center;
 
 	${(p) =>
-		p.variant === variants.list &&
+		p.$variant === variants.list &&
 		css`
 			margin-bottom: 10px;
 		`}

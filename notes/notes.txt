@@ -80,17 +80,18 @@
 ----------------------- Other Notes -----------------------
 ----------------------- Other Notes -----------------------
 
-- Add useClickOutside Hook For Product Model
-- memo images
-- Add Loading To HomePage
-- Rerender in product
-- Featured Product
-- Memo Products In The HomePage
+- Problems
+	- Product Not Connected With Product In Cart
+	- Problem With Remove From Cart Button Close Model [ clickoutside ]
+	- Cart Model Button Not Connected With Card & Product Model
+	- Card Button Dependency Problem
+
+- Add useClickOutside Hook For Product Model & Cart Model
+- Images Size Problem
+- Test Rerender for components
 - Add Linitation To Product [ Name, Description ]
-- Problem With Remov From Cart Button Close Model [ clickoutside ]
-- Product Not Connected With Product In Cart
-- Total Price Problem In Cart
-- move product to product component
+- Add Loading To HomePage
+- Featured Product
 
 ----------------------- After Finish -----------------------
 ----------------------- After Finish -----------------------

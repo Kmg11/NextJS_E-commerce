@@ -15,7 +15,7 @@ export function Rating() {
 		));
 
 	return (
-		<Styles.Rating variant={variant}>
+		<Styles.Rating $variant={variant}>
 			{variant === variants.card && isScreenSmall && (
 				<>
 					<Styles.Stars>

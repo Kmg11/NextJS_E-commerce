@@ -1,15 +1,10 @@
-import { Model } from "components";
+import { Model, Product } from "components";
+import { variants } from "components/Product";
 import { ROUTES } from "constants";
 import { useEsc, useToggle } from "hooks";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { removeProduct } from "store";
 import * as Styles from "./styles";
-
-// todo: Problem With Remov From Cart Button Close Model [ clickoutside ]
-// todo: Product Not Connected With Product In Cart
-// todo: Total Price Problem In Cart
-// todo: move product to product component
 
 export function Cart() {
 	const [isModelOpen, toggleModel] = useToggle(false);
@@ -33,7 +28,7 @@ export function CartMenu({ isModelOpen, toggleModel }) {
 	useEsc(() => toggleModel(false));
 
 	const productsList = products.map((product) => (
-		<Product key={product.id} product={product} />
+		<Product key={product.id} data={product} variant={variants.small} />
 	));
 
 	return (
@@ -53,7 +48,6 @@ export function CartMenu({ isModelOpen, toggleModel }) {
 				{Boolean(products.length) && (
 					<>
 						<Styles.ProductsList>{productsList}</Styles.ProductsList>
-
 						<Styles.Total>Total price: EGP {totalPrice}</Styles.Total>
 
 						<Styles.CheckoutButton as={Link} to={ROUTES.cart}>
@@ -63,30 +57,5 @@ export function CartMenu({ isModelOpen, toggleModel }) {
 				)}
 			</Styles.CartMenu>
 		</Model>
-	);
-}
-
-export function Product({ product }) {
-	const dispatch = useDispatch();
-
-	return (
-		<Styles.Product>
-			<Styles.ImageContainer>
-				<Styles.ProductImage src={product.featuredPhoto} alt={product.name} />
-			</Styles.ImageContainer>
-			<Styles.ProductInfo>
-				<Styles.ProductName>{product.name}</Styles.ProductName>
-				<Styles.Grid>
-					<Styles.ProductPrice>EGP {product.price}</Styles.ProductPrice>
-					<Styles.RemoveFromCartButton
-						onClick={() => dispatch(removeProduct(product.id))}
-						title="Remove from cart"
-						aria-label="Remove from cart"
-					>
-						&times;
-					</Styles.RemoveFromCartButton>
-				</Styles.Grid>
-			</Styles.ProductInfo>
-		</Styles.Product>
 	);
 }

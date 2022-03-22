@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import { Components } from "styles";
 
 export const Cart = styled.div``;
@@ -42,11 +41,11 @@ export const Header = styled.header`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 20px;
 `;
 
 export const MenuTitle = styled.h2`
 	color: ${(p) => p.theme.colors.primary};
-	margin-bottom: 20px;
 `;
 
 export const CloseButton = styled.button`
@@ -64,53 +63,6 @@ export const EmptyMessage = styled.p`
 
 export const ProductsList = styled.section`
 	margin-bottom: 20px;
-`;
-
-export const Product = styled.div`
-	display: grid;
-	grid-template-columns: 80px 1fr;
-	align-items: center;
-	gap: 12px;
-
-	&:not(:last-of-type) {
-		margin-bottom: 15px;
-	}
-`;
-
-export const ImageContainer = styled.div`
-	height: 80px;
-`;
-
-export const ProductImage = styled.img`
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-`;
-
-export const ProductInfo = styled.div``;
-
-export const ProductName = styled.h4`
-	font-size: 14px;
-	font-weight: 600;
-	margin-bottom: 5px;
-`;
-
-export const Grid = styled.div`
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	align-items: center;
-	justify-content: space-between;
-	gap: 12px;
-`;
-
-export const ProductPrice = styled.span`
-	font-size: 1rem;
-	font-weight: bold;
-`;
-
-export const RemoveFromCartButton = styled(CloseButton)`
-	font-size: 1.5rem;
 `;
 
 export const Total = styled.div`

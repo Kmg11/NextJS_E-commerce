@@ -78,3 +78,12 @@ Create Navbar Component
 
 - Create Navbar Component
 - Create Cart Model
+
+----------------------- Some Fixes -----------------------
+
+Some Fixes
+
+- Fix cart total price problem when remove product
+- Create Layouts folder in product component to collect all types of layouts
+- Create new product variants [ fluid, small ]
+- Fix Cart Model Header Style

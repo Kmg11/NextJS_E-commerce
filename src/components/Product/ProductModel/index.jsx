@@ -1,15 +1,8 @@
 import { Model } from "components";
 import { useEsc } from "hooks";
 import { ProductProvider, useProductContext } from "context";
-import {
-	Name,
-	Description,
-	Price,
-	Rating,
-	CartButton,
-	ImagesSlider,
-} from "./Parts";
-import { variants } from ".";
+import { variants } from "..";
+import { Fluid } from "../Layouts/Fluid";
 import * as Styles from "./styles";
 
 export function ProductModel() {
@@ -20,7 +13,7 @@ export function ProductModel() {
 
 	const newProductContextValue = {
 		...productContextValue,
-		variant: variants.list,
+		variant: variants.fluid,
 	};
 
 	return (
@@ -32,17 +25,7 @@ export function ProductModel() {
 							&times;
 						</Styles.CloseButton>
 
-						<Styles.Fluid>
-							<ImagesSlider />
-
-							<Styles.Info>
-								<Name />
-								<Rating />
-								<Description />
-								<Price />
-								<CartButton />
-							</Styles.Info>
-						</Styles.Fluid>
+						<Fluid />
 					</Styles.ModelContent>
 				</ProductProvider>
 			</Styles.ProductModel>
