@@ -71,3 +71,10 @@ Create Product Model
 - Add swiper Slider Package
 - Add [ useEsc, useToggle ] Custome Hooks
 - Add model div to index.html
+
+----------------------- Navbar -----------------------
+
+Create Navbar Component
+
+- Create Navbar Component
+- Create Cart Model

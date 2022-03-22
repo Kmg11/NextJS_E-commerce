@@ -30,7 +30,7 @@ export function CartButton() {
 			)}
 
 			{variant === variants.list && (
-				<Styles.Text $isActive={isProductInCart}>
+				<Styles.Text as="span" $isActive={isProductInCart}>
 					{isProductInCart ? "Remove from cart" : "Add to cart"}
 				</Styles.Text>
 			)}

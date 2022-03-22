@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from "react";
 import { Model } from "components";
-import { useClickOutside, useEsc } from "hooks";
+import { useEsc } from "hooks";
 import { ProductProvider, useProductContext } from "context";
 import {
 	Name,
@@ -16,7 +15,6 @@ import * as Styles from "./styles";
 export function ProductModel() {
 	const productContextValue = useProductContext();
 	const { handleToggleModel } = productContextValue.modelState;
-	const productModelRef = useRef(null);
 
 	useEsc(() => handleToggleModel(false));
 
@@ -29,7 +27,7 @@ export function ProductModel() {
 		<Model>
 			<Styles.ProductModel>
 				<ProductProvider value={newProductContextValue}>
-					<Styles.ModelContent ref={productModelRef}>
+					<Styles.ModelContent>
 						<Styles.CloseButton onClick={() => handleToggleModel(false)}>
 							&times;
 						</Styles.CloseButton>

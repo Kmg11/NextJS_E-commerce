@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Components } from "styles";
 
 export const CartButton = styled.button`
 	position: relative;
@@ -25,21 +26,7 @@ export const Icon = styled.span`
 		`}
 `;
 
-export const Text = styled.span`
-	display: block;
-	width: 100%;
-	text-align: center;
-	background-color: ${(p) => p.theme.colors.primary};
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 800;
-	padding: 12px 20px;
-	transition: background-color 0.2s linear;
-
-	&:hover {
-		background-color: ${(p) => p.theme.colors.background.four};
-	}
-
+export const Text = styled(Components.Button)`
 	${(p) =>
 		p.$isActive &&
 		css`
