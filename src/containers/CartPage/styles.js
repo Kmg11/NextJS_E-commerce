@@ -24,7 +24,7 @@ export const TotalPrice = styled.span`
 export const ClearCart = styled(Components.Button)`
 	margin-bottom: 20px;
 	width: max-content;
-	background-color: ${(p) => p.theme.colors.background.four};
+	background-color: ${(p) => p.theme.colors.background.three};
 
 	${Grid.mediaDown("sm")} {
 		margin-right: auto;

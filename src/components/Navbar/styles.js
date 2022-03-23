@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Navbar = styled.nav`
-	background-color: ${(p) => p.theme.colors.background.four};
+	background-color: ${(p) => p.theme.colors.background.three};
 	padding: 30px 10px;
 	margin-bottom: 1rem;
 `;

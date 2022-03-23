@@ -20,7 +20,7 @@ export const ProductModel = styled.section`
 
 export const ModelContent = styled.section`
 	position: relative;
-	background-color: #fff;
+	background-color: ${(p) => p.theme.colors.background.one};
 	max-width: 800px;
 	border-radius: 5px;
 
@@ -38,13 +38,14 @@ export const CloseButton = styled.button`
 	font-size: 1.8rem;
 	color: #000;
 	line-height: 20px;
+	transition: color 0.2s linear;
 
 	&:hover {
-		color: #ff0000;
+		color: ${(p) => p.theme.colors.error};
 	}
 
 	${Grid.mediaDown("md")} {
-		background-color: #fff;
+		background-color: ${(p) => p.theme.colors.background.one};
 		width: 20px;
 		height: 20px;
 		line-height: 21px;

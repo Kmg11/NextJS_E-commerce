@@ -25,7 +25,6 @@ export const Fluid = styled.div`
 	display: grid;
 	grid-template-columns: 300px 1fr;
 	align-items: center;
-	gap: 1rem;
 
 	${Grid.mediaDown("md")} {
 		grid-template-columns: 100%;
@@ -56,7 +55,7 @@ export const Info = styled.div`
 
 		if (p.$variant === variants.fluid)
 			return css`
-				padding: 1rem;
+				padding: 1rem 1rem 1rem 0.5rem;
 			`;
 	}}
 `;

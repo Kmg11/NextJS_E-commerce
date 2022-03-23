@@ -4,11 +4,27 @@ import { Components } from "styles";
 export const Cart = styled.div``;
 
 export const CartButton = styled.button`
+	position: relative;
 	display: block;
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
-	fill: #fff;
+	fill: ${(p) => p.theme.colors.text.two};
+`;
+
+export const Badge = styled.span`
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: ${(p) => p.theme.colors.primary};
+	color: ${(p) => p.theme.colors.text.two};
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	font-size: 10px;
+	font-weight: bold;
 `;
 
 export const CartMenu = styled.section`

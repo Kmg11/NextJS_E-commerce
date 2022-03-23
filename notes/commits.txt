@@ -109,3 +109,11 @@ Enhancements
 - Add Loading To HomePage
 - Add Error To HomePage
 - Fix Accessibility Issues
+
+----------------------- Enhancements -----------------------
+
+Create Cart Badge & Enhancements
+
+- Create Badge For Navbar Cart Button
+- Remove Not Used Colors
+- Remove Not Used Fonts

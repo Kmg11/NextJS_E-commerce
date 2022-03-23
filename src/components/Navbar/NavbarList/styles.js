@@ -11,5 +11,5 @@ export const ListItem = styled.li`
 export const ItemLink = styled(Link)`
 	text-transform: capitalize;
 	font-weight: bold;
-	color: #fff;
+	color: ${(p) => p.theme.colors.text.two};
 `;

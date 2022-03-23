@@ -30,6 +30,6 @@ export const Text = styled(Components.Button)`
 	${(p) =>
 		p.$isActive &&
 		css`
-			background-color: ${(p) => p.theme.colors.background.four};
+			background-color: ${(p) => p.theme.colors.background.three};
 		`}
 `;

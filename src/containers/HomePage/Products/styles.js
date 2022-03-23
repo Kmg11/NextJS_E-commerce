@@ -35,6 +35,6 @@ export const PaginationLink = styled(Link)`
 	&:nth-of-type(${(p) => p.$currentPage}) {
 		background-color: ${(p) => p.theme.colors.primary};
 		border-color: ${(p) => p.theme.colors.primary};
-		color: #fff;
+		color: ${(p) => p.theme.colors.text.two};
 	}
 `;

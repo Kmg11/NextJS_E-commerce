@@ -40,42 +40,42 @@
 ----------------------- components -----------------------
 ----------------------- components -----------------------
 
-- Product
+- [ Done ] Product
 	- [ Done ] images, name, price
 	- [ Done ] Add to cart button under each product
 	- [ Done ] On click on the product, open modal with more details
 
 - Navbar
-	- Cart Menu
-		- Badge with cart count
-		- On click, Show list of products in the cart
-		- Show a descriptive message if the cart is empty
-		- Checkout button, on click open cart page
-
-- Cart
-	- Client side pagination to move between the products
+	- [ Done ] Pages List
+		- [ Done ] Home
+		- [ Done ] Cart
+	- [ Done ] Cart Menu
+		- [ Done ] Badge with cart count
+		- [ Done ] On click, Show list of products in the cart
+		- [ Done ] Show a descriptive message if the cart is empty
+		- [ Done ] Checkout button, on click open cart page
 
 ----------------------- containers -----------------------
 ----------------------- containers -----------------------
 
-- HomePage
-	- Navbar
+- [ Done ] HomePage
+	- [ Done ] Navbar
 	- [ Done ] Products
 	- [ Done ] Pagination
 
-- CartPage
-	- Navbar
-	- Products
+- [ Done ] CartPage
+	- [ Done ] Navbar
+	- [ Done ] Products
+	- [ Done ] Total Price
+	- [ Done ] Clear Cart Button
 
 ----------------------- store -----------------------
 ----------------------- store -----------------------
 
-- Cart
+- [ Done ] Cart
 	- [ Done ] Add To Cart
 	- [ Done ] Remove From Cart
 	- [ Done ] Clear Cart
-	- Set Product Qunatity
-	- Save In Local Storage
 
 ----------------------- Other Notes -----------------------
 ----------------------- Other Notes -----------------------
@@ -90,8 +90,9 @@
 
 - Check
 	- Performance
-	- Accessibility
-	- Best Practices
+	- [ Done ] Accessibility
+	- [ Done ] Best Practices
+	- [ Done ] SEO
 	- Responsive
 	- Code Structure
 	- Code Quality
@@ -107,8 +108,8 @@
 	- Remove json server and make it normal file
 
 - Clean
-	- Remove Not Used Fonts
-	- Remove Not Colors
+	- [ Done ] Remove Not Used Fonts
+	- [ Done ] Remove Not Used Colors
 
 ----------------------- Docs -----------------------
 ----------------------- Docs -----------------------

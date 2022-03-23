@@ -29,6 +29,6 @@ export const Star = styled.span`
 
 export const StarsCount = styled.span`
 	color: ${(p) => p.theme.colors.warning};
-	font-weight: 900;
+	font-weight: 800;
 	font-size: 14px;
 `;

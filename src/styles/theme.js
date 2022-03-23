@@ -7,12 +7,12 @@ const colors = {
 	background: {
 		one: "#FFFFFF",
 		two: "#F6F6F6",
-		three: "#363F4D",
-		four: "#131921",
+		three: "#131921",
 	},
 
 	text: {
 		one: "#253237",
+		two: "#ffffff",
 	},
 };
 

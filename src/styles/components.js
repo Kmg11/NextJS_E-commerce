@@ -5,13 +5,13 @@ export const Button = styled.button`
 	width: 100%;
 	text-align: center;
 	background-color: ${(p) => p.theme.colors.primary};
-	color: #fff;
+	color: ${(p) => p.theme.colors.text.two};
 	text-transform: uppercase;
 	font-weight: 800;
 	padding: 12px 20px;
 	transition: background-color 0.2s linear;
 
 	&:hover {
-		background-color: ${(p) => p.theme.colors.background.four};
+		background-color: ${(p) => p.theme.colors.background.three};
 	}
 `;
