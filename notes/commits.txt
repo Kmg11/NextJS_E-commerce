@@ -96,3 +96,16 @@ Create CartPage & Product Enhancements
 - Create CartPage [ Products, Total Price, Clear Cart Button ]
 - Close Navbar Cart Menu When Click on Checkout button
 - Hide Cart Menu In Cart Page
+
+----------------------- Enhancements -----------------------
+
+Enhancements
+
+- Uninstall react testing library
+- Remove setupTests File
+- Add useClickOutside Custome Hook
+- Create Spinner Component
+- Create ErrorMessage Component
+- Add Loading To HomePage
+- Add Error To HomePage
+- Fix Accessibility Issues

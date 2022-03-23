@@ -80,13 +80,9 @@
 ----------------------- Other Notes -----------------------
 ----------------------- Other Notes -----------------------
 
-- Problems
-	- Problem With Remove From Cart Button Close Model [ clickoutside ]
-
 - Add useClickOutside Hook For Product Model & Cart Model
 - Images Size Problem
 - Test Rerender for components
-- Handle Loading and Error In HomePage
 - Featured Product
 
 ----------------------- After Finish -----------------------
@@ -100,6 +96,7 @@
 	- Code Structure
 	- Code Quality
 	- Check Responsive From Mobile
+	- Github Routes Problem
 
 - Do
 	- Documentation For Code

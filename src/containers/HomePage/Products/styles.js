@@ -38,10 +38,3 @@ export const PaginationLink = styled(Link)`
 		color: #fff;
 	}
 `;
-
-export const ErrorMessage = styled.p`
-	color: ${(p) => p.theme.colors.error};
-	font-weight: 700;
-	text-align: center;
-	line-height: 1.7;
-`;

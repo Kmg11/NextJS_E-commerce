@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Product, productVariants } from "components";
-import { Grid } from "styles";
+import { ErrorMessage, Product, productVariants } from "components";
 import * as Styles from "./styles";
 
 export function Products({ response }) {
@@ -29,18 +28,16 @@ export function Products({ response }) {
 
 	return (
 		<Styles.Products>
-			<Grid.Container>
-				{currentPage > numberOfPages && (
-					<Styles.ErrorMessage>
-						The page does not exist, please return to the valid page
-						<br />
-						Valid pages: from 1 to {numberOfPages}
-					</Styles.ErrorMessage>
-				)}
+			{currentPage > numberOfPages && (
+				<ErrorMessage>
+					The page does not exist, please return to the valid page
+					<br />
+					Valid pages: from 1 to {numberOfPages}
+				</ErrorMessage>
+			)}
 
-				<Styles.ProductsList>{productsList}</Styles.ProductsList>
-				<Styles.Pagination>{paginationList}</Styles.Pagination>
-			</Grid.Container>
+			<Styles.ProductsList>{productsList}</Styles.ProductsList>
+			<Styles.Pagination>{paginationList}</Styles.Pagination>
 		</Styles.Products>
 	);
 }

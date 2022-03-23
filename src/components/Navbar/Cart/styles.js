@@ -29,7 +29,7 @@ export const CartMenu = styled.section`
 	transition-timing-function: linear;
 
 	${(p) =>
-		p.isModelOpen &&
+		p.$isModelOpen &&
 		css`
 			visibility: visible;
 			opacity: 1;
