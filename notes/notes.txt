@@ -93,19 +93,18 @@
 	- [ Done ] Accessibility
 	- [ Done ] Best Practices
 	- [ Done ] SEO
-	- Responsive
 	- Code Structure
 	- Code Quality
-	- Check Responsive From Mobile
+	- Responsive & Check Responsive From Mobile
 	- Github Routes Problem
 
 - Do
+	- [ Done ] Remove json server and make it normal file
+	- Publish On Github Pages
 	- Documentation For Code
 	- How To Use [ README.md ]
-	- Make Repo Public
 	- Move Docs To README.md
-	- Publish On Github Pages
-	- Remove json server and make it normal file
+	- Make Repo Public
 
 - Clean
 	- [ Done ] Remove Not Used Fonts

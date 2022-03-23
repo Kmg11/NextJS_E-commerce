@@ -11,7 +11,7 @@ export function Card() {
 		: "Close Product Model";
 
 	return (
-		<Styles.Cart>
+		<Styles.Card>
 			<Styles.OverlayButton
 				onClick={() => handleToggleModel(true)}
 				title={modelStatus}
@@ -28,6 +28,6 @@ export function Card() {
 					<CartButton />
 				</Styles.GridArea>
 			</Styles.Info>
-		</Styles.Cart>
+		</Styles.Card>
 	);
 }

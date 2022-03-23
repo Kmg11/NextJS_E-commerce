@@ -117,3 +117,14 @@ Create Cart Badge & Enhancements
 - Create Badge For Navbar Cart Button
 - Remove Not Used Colors
 - Remove Not Used Fonts
+
+----------------------- Enhancements -----------------------
+
+Enhancements
+
+- Remove mock-server Script From package.json
+- Remove json server
+- Move db.json from src to publick
+- Change CartMenu Animation
+- Fix Product Model Not Openining On Mobile
+- Add Overflow auto To CartMenu To Handle Scrolling

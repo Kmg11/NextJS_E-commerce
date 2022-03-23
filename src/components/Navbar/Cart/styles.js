@@ -37,18 +37,14 @@ export const CartMenu = styled.section`
 	background-color: ${(p) => p.theme.colors.background.two};
 	box-shadow: -2px 0 10px rgba(0, 0, 0, 0.25);
 	padding: 1rem;
-	visibility: hidden;
-	opacity: 0;
 	transform: translateX(100%);
-	transition-property: transform, opacity, visibility;
+	transition-property: transform;
 	transition-duration: 0.2s;
 	transition-timing-function: linear;
 
 	${(p) =>
 		p.$isModelOpen &&
 		css`
-			visibility: visible;
-			opacity: 1;
 			transform: translateX(0);
 		`}
 `;
@@ -79,6 +75,8 @@ export const EmptyMessage = styled.p`
 
 export const ProductsList = styled.section`
 	margin-bottom: 20px;
+	overflow: auto;
+	max-height: 350px;
 `;
 
 export const Total = styled.div`

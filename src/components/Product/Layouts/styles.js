@@ -3,7 +3,7 @@ import { css } from "styled-components";
 import { Grid } from "styles";
 import { variants } from "..";
 
-export const Cart = styled.div`
+export const Card = styled.div`
 	position: relative;
 `;
 
@@ -56,6 +56,10 @@ export const Info = styled.div`
 		if (p.$variant === variants.fluid)
 			return css`
 				padding: 1rem 1rem 1rem 0.5rem;
+
+				${Grid.mediaDown("md")} {
+					padding: 1rem;
+				}
 			`;
 	}}
 `;
@@ -73,5 +77,7 @@ export const OverlayButton = styled.button`
 	bottom: 0;
 	left: 0;
 	right: 0;
+	width: 100%;
+	height: 100%;
 	z-index: 1;
 `;
