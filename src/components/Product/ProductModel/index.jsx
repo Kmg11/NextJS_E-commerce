@@ -6,13 +6,13 @@ import { Fluid } from "../Layouts/Fluid";
 import * as Styles from "./styles";
 
 export function ProductModel() {
-	const productContextValue = useProductContext();
-	const { handleToggleModel } = productContextValue.modelState;
+	const prevProductContextValue = useProductContext();
+	const { handleToggleModel } = prevProductContextValue.modelState;
 
 	useEsc(() => handleToggleModel(false));
 
 	const newProductContextValue = {
-		...productContextValue,
+		...prevProductContextValue,
 		variant: variants.fluid,
 	};
 

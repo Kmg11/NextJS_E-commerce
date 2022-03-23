@@ -45,12 +45,16 @@ export function CartMenu({ isModelOpen, toggleModel }) {
 					<Styles.EmptyMessage>Cart is empty</Styles.EmptyMessage>
 				)}
 
-				{Boolean(products.length) && (
+				{!!products.length && (
 					<>
 						<Styles.ProductsList>{productsList}</Styles.ProductsList>
 						<Styles.Total>Total price: EGP {totalPrice}</Styles.Total>
 
-						<Styles.CheckoutButton as={Link} to={ROUTES.cart}>
+						<Styles.CheckoutButton
+							as={Link}
+							to={ROUTES.cart}
+							onClick={() => toggleModel(false)}
+						>
 							Checkout
 						</Styles.CheckoutButton>
 					</>

@@ -87,3 +87,12 @@ Some Fixes
 - Create Layouts folder in product component to collect all types of layouts
 - Create new product variants [ fluid, small ]
 - Fix Cart Model Header Style
+
+----------------------- Create CartPage -----------------------
+
+Create CartPage & Product Enhancements
+
+- Fix cart problem - by add productsIds state to check if product is in cart or no
+- Create CartPage [ Products, Total Price, Clear Cart Button ]
+- Close Navbar Cart Menu When Click on Checkout button
+- Hide Cart Menu In Cart Page

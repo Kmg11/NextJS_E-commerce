@@ -9,9 +9,16 @@ export const Cart = styled.div`
 
 export const List = styled.div`
 	display: grid;
-	grid-template-columns: 200px 1fr;
-	gap: 1rem;
+	grid-template-columns: 250px 1fr;
 	align-items: center;
+
+	${Grid.mediaDown("sm")} {
+		grid-template-columns: 1fr;
+		justify-content: center;
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 `;
 
 export const Fluid = styled.div`
@@ -38,7 +45,16 @@ export const Info = styled.div`
 				padding: 0.75rem;
 			`;
 
-		if (p.$variant === variants.list || p.$variant === variants.fluid)
+		if (p.$variant === variants.list)
+			return css`
+				padding: 1rem;
+
+				${Grid.mediaDown("sm")} {
+					padding: 1rem 0;
+				}
+			`;
+
+		if (p.$variant === variants.fluid)
 			return css`
 				padding: 1rem;
 			`;

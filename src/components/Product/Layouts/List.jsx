@@ -13,10 +13,8 @@ export function List() {
 				<Name />
 				<Rating />
 				<Description />
-				<Styles.GridArea>
-					<Price />
-					<CartButton />
-				</Styles.GridArea>
+				<Price />
+				<CartButton />
 			</Styles.Info>
 		</Styles.List>
 	);

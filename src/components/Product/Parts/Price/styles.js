@@ -15,7 +15,7 @@ export const Price = styled.div`
 				font-size: 1.4rem;
 			`;
 
-		if (p.$variant === variants.small || p.$variant === variants.list)
+		if (p.$variant === variants.small)
 			return css`
 				margin-bottom: 0;
 			`;

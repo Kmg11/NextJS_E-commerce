@@ -22,7 +22,7 @@ export function Product({ data, variant = variants.card }) {
 		toggleModel(status);
 	};
 
-	const ProductContextValue = {
+	const productContextValue = {
 		data,
 		variant,
 		modelState: { isModelOpen, handleToggleModel },
@@ -30,7 +30,7 @@ export function Product({ data, variant = variants.card }) {
 
 	return (
 		<Styles.Product variant={variant}>
-			<ProductProvider value={ProductContextValue}>
+			<ProductProvider value={productContextValue}>
 				{variant === variants.card && <Card />}
 				{variant === variants.list && <List />}
 				{variant === variants.small && <Small />}

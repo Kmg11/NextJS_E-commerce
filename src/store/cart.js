@@ -4,6 +4,7 @@ const cartSlice = createSlice({
 	name: "cart",
 	initialState: {
 		products: [],
+		productsIds: {}, // Help checking if the product is already in the cart or no
 		totalPrice: 0,
 	},
 	reducers: {
@@ -11,6 +12,7 @@ const cartSlice = createSlice({
 			const product = action.payload;
 
 			state.products.push({ ...product, quantity: 1 });
+			state.productsIds[product.id] = true;
 			state.totalPrice += +product.price;
 		},
 
@@ -19,11 +21,13 @@ const cartSlice = createSlice({
 			const productIndex = state.products.findIndex((p) => p.id === product.id);
 
 			state.products.splice(productIndex, 1);
+			delete state.productsIds[product.id];
 			state.totalPrice -= +product.price;
 		},
 
 		clearCart: (state) => {
 			state.products = [];
+			state.productsIds = {};
 			state.totalPrice = 0;
 		},
 	},

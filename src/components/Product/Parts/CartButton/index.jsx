@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useProductContext } from "context";
 import { addProduct, removeProduct } from "store";
@@ -7,24 +6,14 @@ import * as Styles from "./styles";
 
 export function CartButton() {
 	const { data, variant } = useProductContext();
-	const products = useSelector((state) => state.products);
-	const [isProductInCart, setisProductInCart] = useState(false);
+	const { productsIds } = useSelector((state) => state);
+	const isProductInCart = productsIds[data.id];
 	const dispatch = useDispatch();
 
 	const handleCart = () => {
-		setisProductInCart((prev) => !prev);
-
 		if (!isProductInCart) dispatch(addProduct(data));
 		if (isProductInCart) dispatch(removeProduct(data));
 	};
-
-	useEffect(() => {
-		const productIndex = products.findIndex(
-			(product) => product.id === data.id
-		);
-		if (productIndex !== -1) setisProductInCart(true);
-		// console.log(1);
-	}, [products, data.id]);
 
 	return (
 		<Styles.CartButton
