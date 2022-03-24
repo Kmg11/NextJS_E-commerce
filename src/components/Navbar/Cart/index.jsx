@@ -1,9 +1,6 @@
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { Model, Product } from "components";
-import { variants } from "components/Product";
-import { ROUTES } from "constants";
-import { useEsc, useToggle } from "hooks";
+import { useToggle } from "hooks";
+import { CartMenu } from "./CartMenu";
 import * as Styles from "./styles";
 
 export function Cart() {
@@ -28,47 +25,5 @@ export function Cart() {
 
 			<CartMenu isModelOpen={isModelOpen} toggleModel={toggleModel} />
 		</Styles.Cart>
-	);
-}
-
-export function CartMenu({ isModelOpen, toggleModel }) {
-	const { products, totalPrice } = useSelector((state) => state);
-
-	useEsc(() => toggleModel(false));
-
-	const productsList = products.map((product) => (
-		<Product key={product.id} data={product} variant={variants.small} />
-	));
-
-	return (
-		<Model>
-			<Styles.CartMenu $isModelOpen={isModelOpen}>
-				<Styles.Header>
-					<Styles.MenuTitle>Cart</Styles.MenuTitle>
-					<Styles.CloseButton onClick={() => toggleModel(false)}>
-						&times;
-					</Styles.CloseButton>
-				</Styles.Header>
-
-				{!products.length && (
-					<Styles.EmptyMessage>Cart is empty</Styles.EmptyMessage>
-				)}
-
-				{!!products.length && (
-					<>
-						<Styles.ProductsList>{productsList}</Styles.ProductsList>
-						<Styles.Total>Total price: EGP {totalPrice}</Styles.Total>
-
-						<Styles.CheckoutButton
-							as={Link}
-							to={ROUTES.cart}
-							onClick={() => toggleModel(false)}
-						>
-							Checkout
-						</Styles.CheckoutButton>
-					</>
-				)}
-			</Styles.CartMenu>
-		</Model>
 	);
 }

@@ -18,6 +18,7 @@ export function CartButton() {
 	return (
 		<Styles.CartButton
 			title={isProductInCart ? "Remove from cart" : "Add to cart"}
+			aria-label={isProductInCart ? "Remove from cart" : "Add to cart"}
 			onClick={handleCart}
 		>
 			{(variant === variants.card || variant === variants.small) && (

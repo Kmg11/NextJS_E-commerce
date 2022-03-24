@@ -83,7 +83,6 @@
 - Add useClickOutside Hook For Product Model & Cart Model
 - Images Size Problem
 - Test Rerender for components
-- Featured Product
 
 ----------------------- After Finish -----------------------
 ----------------------- After Finish -----------------------
@@ -93,58 +92,20 @@
 	- [ Done ] Accessibility
 	- [ Done ] Best Practices
 	- [ Done ] SEO
-	- Code Structure
-	- Code Quality
-	- Responsive & Check Responsive From Mobile
+	- [ Done ] Code Structure
+	- [ Done ] Code Quality
+	- [ Done ] Responsive & Check Responsive From Mobile
 	- Github Routes Problem
 
 - Do
 	- [ Done ] Remove json server and make it normal file
+	- [ Done ] Move Docs To README.md
 	- Publish On Github Pages
 	- Documentation For Code
 	- How To Use [ README.md ]
-	- Move Docs To README.md
 	- Make Repo Public
+	- Add Live Preview Link In README.md File
 
 - Clean
 	- [ Done ] Remove Not Used Fonts
 	- [ Done ] Remove Not Used Colors
-
------------------------ Docs -----------------------
------------------------ Docs -----------------------
-
-- All paths is absoulte reference to src folder
-	- Don't use "../components"
-	- Use "components"
-
-- All main folders like "components", "containers", "store"
-	- have index.js file to collect all exports from them to simplify imports
-
-- All folders that not have direct component start with small letter
-	- like "components", "containers", "store"
-
-- All components folders start with capital letter
-	- like "HomePage", "Navbar"
-
-- All exports is named export to avoid default export problems
-
-- Struture
-	- components: Contain all components that used by many pages
-		- Navbar
-		- Product
-
-	- containers: Contain pages and there components
-		- HomePage
-		- CartPage
-
-	- store: Contain all redux logic [ store, reducers, actions ]
-		- Cart
-
-	- constants: Contain all constants that used by many components
-		- ROUTES
-
-	- hooks: Contain all hooks that used by many components
-		- useAxios
-
-	- styles: Contain all styles that used by many components
-		- globalStyles

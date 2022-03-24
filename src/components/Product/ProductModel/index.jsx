@@ -2,7 +2,7 @@ import { Model } from "components";
 import { useEsc } from "hooks";
 import { ProductProvider, useProductContext } from "context";
 import { variants } from "..";
-import { Fluid } from "../Layouts/Fluid";
+import { Fluid } from "../Variants/Fluid";
 import * as Styles from "./styles";
 
 export function ProductModel() {

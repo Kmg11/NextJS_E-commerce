@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 import { ErrorMessage, Product, productVariants } from "components";
 import * as Styles from "./styles";
@@ -6,7 +7,11 @@ export function Products({ response }) {
 	const params = useParams();
 	const numberOfPages = Math.ceil(response.length / 6);
 	const currentPage = params?.page ?? 1;
-	const products = response.slice(currentPage * 6 - 6, currentPage * 6);
+	const productsInPage = 6;
+	const products = response.slice(
+		currentPage * productsInPage - productsInPage,
+		currentPage * productsInPage
+	);
 
 	const productsList = products.map((product) => (
 		<Product key={product.id} data={product} variant={productVariants.card} />
@@ -41,3 +46,18 @@ export function Products({ response }) {
 		</Styles.Products>
 	);
 }
+
+Products.propTypes = {
+	response: PropTypes.arrayOf(
+		PropTypes.shape({
+			id: PropTypes.number.isRequired,
+			name: PropTypes.string.isRequired,
+			description: PropTypes.string.isRequired,
+			rate: PropTypes.string.isRequired,
+			reviewsCount: PropTypes.string.isRequired,
+			price: PropTypes.string.isRequired,
+			featuredPhoto: PropTypes.string.isRequired,
+			photos: PropTypes.arrayOf(PropTypes.string).isRequired,
+		}).isRequired
+	).isRequired,
+};

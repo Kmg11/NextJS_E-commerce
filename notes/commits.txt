@@ -128,3 +128,13 @@ Enhancements
 - Change CartMenu Animation
 - Fix Product Model Not Openining On Mobile
 - Add Overflow auto To CartMenu To Handle Scrolling
+
+----------------------- Enhancements -----------------------
+
+Enhancements
+
+- Create documentation file
+- Add Explantion To Hooks
+- Move Navbar CartMenu فo separate file
+- Change Product component Layouts folder to Variants
+- Add PropTypes To Components

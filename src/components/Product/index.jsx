@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { ProductProvider } from "context";
 import { useToggle } from "hooks";
-import { Card, List, Small } from "./Layouts";
+import { Card, List, Small } from "./Variants";
 import { ProductModel } from "./ProductModel";
 import * as Styles from "./styles";
 

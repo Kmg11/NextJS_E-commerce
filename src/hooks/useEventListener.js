@@ -1,5 +1,15 @@
 import { useEffect, useRef } from "react";
 
+/**
+ * Use it to handle event listeners
+ *
+ * useEventListener(eventType, callback, element);
+ *
+ * 	- eventType: [ click, mouseover, mouseout, etc. ]
+ * 	- callback: [ function ]
+ * 	- element: [ document, window, ref, etc. ]
+ */
+
 export function useEventListener(eventType, callback, element = window) {
 	const callbackRef = useRef(callback);
 

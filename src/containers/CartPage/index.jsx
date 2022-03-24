@@ -1,5 +1,5 @@
-import { Product, productVariants } from "components";
 import { useDispatch, useSelector } from "react-redux";
+import { Product, productVariants } from "components";
 import { clearCart } from "store";
 import { Grid } from "styles";
 import * as Styles from "./styles";
