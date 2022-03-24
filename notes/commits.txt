@@ -148,3 +148,10 @@ Deploy On Github
 - Add homepage propriety to package.json file
 - Add 404.html file to handle github SPA
 - Add github SPA script in index.html
+
+----------------------- README.md File -----------------------
+
+README.md File
+
+- Add How To Use Instructions In README.md File
+- Add Live Preview Link In README.md File

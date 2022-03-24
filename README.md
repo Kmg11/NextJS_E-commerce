@@ -1,5 +1,27 @@
 # Xramile Ecommerce
 
+## Live Preview
+
+- Link: https://kmg11.github.io/Xramile-Ecommerce/
+
+## How to Run App
+
+### Development mode
+
+    - npm install
+    - npm start
+    - Open: http://{your_local_ip}:{port}/Xramile-Ecommerce
+    - Example: http://192.168.1.4:3000/Xramile-Ecommerce || http://localhost:3000/Xramile-Ecommerce
+
+### Production Mode
+
+    - npm install
+    - npm run build
+    - npm install -g serve
+    - serve -s build
+    - Open: http://{your_local_ip}:{port}/Xramile-Ecommerce
+    - Example: http://192.168.1.4:3000/Xramile-Ecommerce
+
 ## Documentation
 
 - Rules

@@ -45,7 +45,7 @@
 	- [ Done ] Add to cart button under each product
 	- [ Done ] On click on the product, open modal with more details
 
-- Navbar
+- [ Done ] Navbar
 	- [ Done ] Pages List
 		- [ Done ] Home
 		- [ Done ] Cart
@@ -80,8 +80,6 @@
 ----------------------- Other Notes -----------------------
 ----------------------- Other Notes -----------------------
 
-- Add useClickOutside Hook For Product Model & Cart Model
-- Images Size Problem
 - Test Rerender for components
 
 ----------------------- After Finish -----------------------
@@ -95,17 +93,17 @@
 	- [ Done ] Code Structure
 	- [ Done ] Code Quality
 	- [ Done ] Responsive & Check Responsive From Mobile
-	- Github Routes Problem
+	- [ Done ] Github Routes Problem
 
-- Do
+- [ Done ] Do
 	- [ Done ] Remove json server and make it normal file
 	- [ Done ] Move Docs To README.md
-	- Publish On Github Pages
-	- Documentation For Code
-	- How To Use [ README.md ]
-	- Make Repo Public
-	- Add Live Preview Link In README.md File
+	- [ Done ] Publish On Github Pages
+	- [ Done ] Documentation For Code
+	- [ Done ] Make Repo Public
+	- [ Done ] How To Use [ README.md ]
+	- [ Done ] Add Live Preview Link In README.md File
 
-- Clean
+- [ Done ] Clean
 	- [ Done ] Remove Not Used Fonts
 	- [ Done ] Remove Not Used Colors
