@@ -3,4 +3,4 @@ export const ROUTES = {
 	cart: "/cart",
 };
 
-export const API_URL = "/db.json";
+export const API_URL = process.env.PUBLIC_URL + "/db.json";

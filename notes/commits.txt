@@ -138,3 +138,13 @@ Enhancements
 - Move Navbar CartMenu فo separate file
 - Change Product component Layouts folder to Variants
 - Add PropTypes To Components
+
+----------------------- Deploy On Github -----------------------
+
+Deploy On Github
+
+- Install gh-pages package
+- Add gh-pages scripts [ predeploy, deploy ]
+- Add homepage propriety to package.json file
+- Add 404.html file to handle github SPA
+- Add github SPA script in index.html
