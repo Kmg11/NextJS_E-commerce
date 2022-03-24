@@ -16,8 +16,15 @@ export function Product({ data, variant = variants.card }) {
 	const [isModelOpen, toggleModel] = useToggle(false);
 
 	const handleToggleModel = (status) => {
-		if (status) document.body.style.overflow = "hidden";
-		if (!status) document.body.style.overflow = "auto";
+		if (status) {
+			document.body.style.overflow = "hidden";
+			document.body.style.paddingRight = "15px";
+		}
+
+		if (!status) {
+			document.body.style.overflow = "auto";
+			document.body.style.paddingRight = "0";
+		}
 
 		toggleModel(status);
 	};

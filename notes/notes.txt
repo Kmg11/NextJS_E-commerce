@@ -80,8 +80,8 @@
 ----------------------- Other Notes -----------------------
 ----------------------- After Finish -----------------------
 
-- Check
-	- Performance
+- [ Done ] Check
+	- [ Done ] Performance
 	- [ Done ] Accessibility
 	- [ Done ] Best Practices
 	- [ Done ] SEO

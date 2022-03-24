@@ -1,3 +1,7 @@
-# https://www.robotstxt.org/robotstxt.html
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: http://Kmg11.github.io/Xramile-Ecommerce

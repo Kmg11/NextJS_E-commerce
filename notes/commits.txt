@@ -163,3 +163,10 @@ Add useClickOutside Custome Hook
 - Add useClickOutside Custome Hook
 - Add useClickOutside To [ CartMenu, ProductModel ]
 - Add capture: true in useEventListener Hook
+
+----------------------- Enhancements -----------------------
+
+Enhancements
+
+- Add Padding To Body When Open Product Model
+- robots.txt
