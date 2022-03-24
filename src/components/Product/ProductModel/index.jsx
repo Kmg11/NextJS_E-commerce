@@ -1,5 +1,6 @@
+import { useRef } from "react";
 import { Model } from "components";
-import { useEsc } from "hooks";
+import { useClickOutside, useEsc } from "hooks";
 import { ProductProvider, useProductContext } from "context";
 import { variants } from "..";
 import { Fluid } from "../Variants/Fluid";
@@ -7,9 +8,14 @@ import * as Styles from "./styles";
 
 export function ProductModel() {
 	const prevProductContextValue = useProductContext();
-	const { handleToggleModel } = prevProductContextValue.modelState;
+	const { isModelOpen, handleToggleModel } = prevProductContextValue.modelState;
+	const productModelRef = useRef(null);
 
 	useEsc(() => handleToggleModel(false));
+	useClickOutside(
+		productModelRef,
+		() => isModelOpen && handleToggleModel(false)
+	);
 
 	const newProductContextValue = {
 		...prevProductContextValue,
@@ -20,7 +26,7 @@ export function ProductModel() {
 		<Model>
 			<Styles.ProductModel>
 				<ProductProvider value={newProductContextValue}>
-					<Styles.ModelContent>
+					<Styles.ModelContent ref={productModelRef}>
 						<Styles.CloseButton onClick={() => handleToggleModel(false)}>
 							&times;
 						</Styles.CloseButton>

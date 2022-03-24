@@ -155,3 +155,11 @@ README.md File
 
 - Add How To Use Instructions In README.md File
 - Add Live Preview Link In README.md File
+
+----------------------- Add useClickOutside  -----------------------
+
+Add useClickOutside Custome Hook
+
+- Add useClickOutside Custome Hook
+- Add useClickOutside To [ CartMenu, ProductModel ]
+- Add capture: true in useEventListener Hook

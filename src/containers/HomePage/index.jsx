@@ -13,7 +13,7 @@ export function HomePage() {
 
 			{error && <ErrorMessage>{error}</ErrorMessage>}
 
-			{response && <Products response={response.products} />}
+			{response && !loading && <Products response={response.products} />}
 		</Grid.Container>
 	);
 }

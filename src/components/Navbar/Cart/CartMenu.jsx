@@ -1,16 +1,19 @@
+import { useRef } from "react";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Model, Product } from "components";
 import { variants } from "components/Product";
 import { ROUTES } from "constants";
-import { useEsc } from "hooks";
+import { useClickOutside, useEsc } from "hooks";
 import * as Styles from "./styles";
 
 export function CartMenu({ isModelOpen, toggleModel }) {
 	const { products, totalPrice } = useSelector((state) => state);
+	const cartMenuRef = useRef(null);
 
 	useEsc(() => toggleModel(false));
+	useClickOutside(cartMenuRef, () => isModelOpen && toggleModel(false));
 
 	const productsList = products.map((product) => (
 		<Product key={product.id} data={product} variant={variants.small} />
@@ -18,7 +21,7 @@ export function CartMenu({ isModelOpen, toggleModel }) {
 
 	return (
 		<Model>
-			<Styles.CartMenu $isModelOpen={isModelOpen}>
+			<Styles.CartMenu $isModelOpen={isModelOpen} ref={cartMenuRef}>
 				<Styles.Header>
 					<Styles.MenuTitle>Cart</Styles.MenuTitle>
 					<Styles.CloseButton onClick={() => toggleModel(false)}>

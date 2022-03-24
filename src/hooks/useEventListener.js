@@ -20,7 +20,9 @@ export function useEventListener(eventType, callback, element = window) {
 	useEffect(() => {
 		if (element === null) return;
 		const handler = (e) => callbackRef.current(e);
-		element.addEventListener(eventType, handler);
+		element.addEventListener(eventType, handler, {
+			capture: true,
+		});
 
 		return () => element.removeEventListener(eventType, handler);
 	}, [eventType, element]);
