@@ -170,3 +170,12 @@ Enhancements
 
 - Add Padding To Body When Open Product Model
 - robots.txt
+
+----------------------- Handle Images -----------------------
+
+Handle Images For Better Performance
+
+- Optimize Images To .webp
+- Add Images To Public Folder
+- Change db.json images paths
+- Create constant for images

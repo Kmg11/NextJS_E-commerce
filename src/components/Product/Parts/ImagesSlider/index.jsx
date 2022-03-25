@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, A11y, Keyboard, Thumbs } from "swiper";
 import { theme } from "styles";
 import { useProductContext } from "context";
+import { IMAGES_PATH } from "constants";
 import * as Styles from "./styles";
 
 import "swiper/components/navigation/navigation.min.css";
@@ -18,7 +19,10 @@ export function ImagesSlider() {
 
 	const imagesList = data.photos.map((photo, index) => (
 		<SwiperSlide key={index}>
-			<Styles.Image src={photo} alt={`${data.name} Image ${index + 1}`} />
+			<Styles.Image
+				src={IMAGES_PATH + photo}
+				alt={`${data.name} Image ${index + 1}`}
+			/>
 		</SwiperSlide>
 	));
 

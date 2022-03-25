@@ -4,3 +4,5 @@ export const ROUTES = {
 };
 
 export const API_URL = process.env.PUBLIC_URL + "/db.json";
+
+export const IMAGES_PATH = process.env.PUBLIC_URL + "/images";

@@ -1,3 +1,4 @@
+import { IMAGES_PATH } from "constants";
 import { useProductContext } from "context";
 import * as Styles from "./styles";
 
@@ -6,7 +7,7 @@ export function Image() {
 
 	return (
 		<Styles.ImageContainer $variant={variant}>
-			<Styles.Image src={data.featuredPhoto} alt={data.name} />
+			<Styles.Image src={IMAGES_PATH + data.featuredPhoto} alt={data.name} />
 		</Styles.ImageContainer>
 	);
 }
