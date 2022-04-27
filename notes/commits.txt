@@ -199,3 +199,7 @@ Fixes
 - Remove mock-server script from package.json
 - Create data folder & add products data
 - Change Home Page getServerSideProps to getInitialProps
+
+----------------------- Finish Project -----------------------
+
+Uninstall axios package
