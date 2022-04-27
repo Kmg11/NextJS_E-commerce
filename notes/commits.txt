@@ -189,3 +189,13 @@ Convert React To Next.js
 Remove json-server
 
 - Create .env.local file
+
+----------------------- README File -----------------------
+
+Fixes
+
+- Add Live Preview Link To README File
+- Remove db.json file
+- Remove mock-server script from package.json
+- Create data folder & add products data
+- Change Home Page getServerSideProps to getInitialProps

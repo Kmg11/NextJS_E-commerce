@@ -1,8 +1,7 @@
 import Head from "next/head";
-import axios from "axios";
-import { API_URL } from "constants/index";
 import { Grid } from "styles";
 import { HomePage } from "containers";
+import { products } from "data";
 
 export default function Home({ data }) {
 	return (
@@ -18,11 +17,8 @@ export default function Home({ data }) {
 	);
 }
 
-export async function getServerSideProps() {
-	const res = await axios.get(API_URL);
-	const data = res.data.products;
-
+export async function getStaticProps() {
 	return {
-		props: { data },
+		props: { data: products },
 	};
 }

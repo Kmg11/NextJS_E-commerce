@@ -6,8 +6,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
-		"mock-server": "json-server ./public/db.json --watch --port 4000"
+		"lint": "next lint"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.8.1",

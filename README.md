@@ -2,7 +2,7 @@
 
 ## Live Preview
 
-- Link: 
+- Link: https://simple-ecommerce-app.vercel.app/
 
 ## How to Run App
 
