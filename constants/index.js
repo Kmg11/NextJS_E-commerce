@@ -3,6 +3,6 @@ export const ROUTES = {
 	cart: "/cart",
 };
 
-export const API_URL = "http://localhost:4000/products";
+export const API_URL = process.env.NEXT_PUBLIC_API_URL + "/db.json";
 
 export const IMAGES_PATH = "/images";

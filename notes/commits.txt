@@ -16,7 +16,7 @@ Initial Setup
 	- Styled components
 	- Json Server
 
-- Struture
+- Structure
 	- components
 	- containers
 		- HomePage
@@ -30,7 +30,7 @@ Initial Setup
 		- Global Styles
 
 - Other
-	- Absoulte Paths
+	- Absolute Paths
 	- Change App.js To App.jsx
 
 ----------------------- Create Product Component -----------------------
@@ -39,8 +39,8 @@ Create Product Component
 
 - Add API constant to constants folder
 - Install prop-types Package
-- Fix useAxios Custome Hook axios import
-- Add [useMediaQuery, useEventListener] Custome Hooks
+- Fix useAxios Custom Hook axios import
+- Add [useMediaQuery, useEventListener] Custom Hooks
 - Fetch Products From Json Server
 - Create Product Component
 - Create Products List In HomePage
@@ -69,7 +69,7 @@ Create Product Model
 
 - Create Product Modal
 - Add swiper Slider Package
-- Add [ useEsc, useToggle ] Custome Hooks
+- Add [ useEsc, useToggle ] Custom Hooks
 - Add model div to index.html
 
 ----------------------- Navbar -----------------------
@@ -103,7 +103,7 @@ Enhancements
 
 - Uninstall react testing library
 - Remove setupTests File
-- Add useClickOutside Custome Hook
+- Add useClickOutside Custom Hook
 - Create Spinner Component
 - Create ErrorMessage Component
 - Add Loading To HomePage
@@ -124,9 +124,9 @@ Enhancements
 
 - Remove mock-server Script From package.json
 - Remove json server
-- Move db.json from src to publick
+- Move db.json from src to public
 - Change CartMenu Animation
-- Fix Product Model Not Openining On Mobile
+- Fix Product Model Not Opening On Mobile
 - Add Overflow auto To CartMenu To Handle Scrolling
 
 ----------------------- Enhancements -----------------------
@@ -134,7 +134,7 @@ Enhancements
 Enhancements
 
 - Create documentation file
-- Add Explantion To Hooks
+- Add Explanation To Hooks
 - Move Navbar CartMenu فo separate file
 - Change Product component Layouts folder to Variants
 - Add PropTypes To Components
@@ -158,9 +158,9 @@ README.md File
 
 ----------------------- Add useClickOutside  -----------------------
 
-Add useClickOutside Custome Hook
+Add useClickOutside Custom Hook
 
-- Add useClickOutside Custome Hook
+- Add useClickOutside Custom Hook
 - Add useClickOutside To [ CartMenu, ProductModel ]
 - Add capture: true in useEventListener Hook
 
@@ -183,3 +183,9 @@ Handle Images For Better Performance
 ----------------------- Convert App To Next.js -----------------------
 
 Convert React To Next.js
+
+----------------------- Convert App To Next.js -----------------------
+
+Remove json-server
+
+- Create .env.local file
