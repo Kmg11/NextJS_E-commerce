@@ -20,7 +20,7 @@
 		- [ Done ] Add db.json
 		- [ Done ] Add Script For Json Server
 
-- [ Done ] Struture
+- [ Done ] Structure
 	- [ Done ] components
 	- [ Done ] containers
 		- [ Done ] HomePage
@@ -34,7 +34,7 @@
 		- [ Done ] useAxios
 
 - [ Done ] Other
-	- [ Done ] Absoulte Paths
+	- [ Done ] Absolute Paths
 	- [ Done ] Change App.js To App.jsx
 
 ----------------------- components -----------------------
@@ -102,3 +102,34 @@
 - [ Done ] Clean
 	- [ Done ] Remove Not Used Fonts
 	- [ Done ] Remove Not Used Colors
+
+----------------------- Convert To Next.js -----------------------
+----------------------- Convert To Next.js -----------------------
+
+Convert To Next.js Steps
+
+- [ Done ] Create next app [ Use React Version 17.0.2 ]
+- [ Done ] package.json [ Install packages - Scripts - Configs ]
+- [ Done ] Project Config
+	- [ Done ] Add Styled components next.js configs
+	- [ Done ] Config absolute paths
+	- [ Done ] Connect with git repo [ Move .git folder to the next project ]
+	- [ Done ] Convert pages files from .js to .jsx
+- [ Done ] _app.js File
+	- [ Done ] Add Head to _app.js
+	- [ Done ] Move src index.js content to _app.js
+	- [ Done ] Add layout to _app.js
+- [ Done ] Move files & folders to next app
+- [ Done ] pages
+	- [ Done ] Convert react-router-dom to next file-system-routing
+	- [ Done ] Add Head to every page
+	- [ Done ] Connect page with container
+- [ Done ] Use next utils
+	- [ Done ] Convert img tag to next Image tag
+	- [ Done ] Convert Requests to ssg, ssr, isr
+- [ Done ] Custom Hooks
+	- [ Done ] Add useMounted hook to handle portals
+	- [ Done ] Remove useAxios if not needed
+- [ Done ] Remove Images Style
+- [ Done ] Use nextWindow & nextDocument instead of window & document
+- [ Done ] If Any Problem Close Strict Mode

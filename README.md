@@ -1,32 +1,31 @@
-# Xramile Ecommerce
+# E-commerce
 
 ## Live Preview
 
-- Link: https://kmg11.github.io/Xramile-Ecommerce/
+- Link: 
 
 ## How to Run App
 
 ### Development mode
 
     - npm install
-    - npm start
-    - Open: http://{your_local_ip}:{port}/Xramile-Ecommerce
-    - Example: http://192.168.1.4:3000/Xramile-Ecommerce || http://localhost:3000/Xramile-Ecommerce
+    - npm run dev
+    - Open: http://{your_local_ip}:{port}/
+    - Example: http://192.168.1.4:3000/ || http://localhost:3000/
 
 ### Production Mode
 
     - npm install
     - npm run build
-    - npm install -g serve
-    - serve -s build
-    - Open: http://{your_local_ip}:{port}/Xramile-Ecommerce
-    - Example: http://192.168.1.4:3000/Xramile-Ecommerce
+    - npm start
+    - Open: http://{your_local_ip}:{port}
+    - Example: http://192.168.1.4:3000
 
 ## Documentation
 
 - Rules
 
-  - All paths is absoulte reference to src folder [ handled by jsconfig.json file ]
+  - All paths is absolute reference to src folder [ handled by jsconfig.json file ]
 
     - Don't use "../components"
     - Use "components"
@@ -45,7 +44,9 @@
 
   - All exports is named export to avoid default export problems
 
-- File Struture => [ src ]
+- File Structure
+
+  - [ pages ] Contain all app pages
 
   - [ components ] Contain all components that used by many pages [ Product, Navbar, ... ]
 
@@ -60,3 +61,5 @@
   - [ store ]: Contain all redux logic [ cart ]
 
   - [ styles ]: Contain all styles that used by many components [ theme, gridSystem, ... ]
+
+  - [ utils ]: Contain all utils
