@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
 import { ErrorMessage, Product, productVariants } from "components";
@@ -6,7 +7,7 @@ import * as Styles from "./styles";
 export function HomePage({ response }) {
 	const router = useRouter();
 	const numberOfPages = Math.ceil(response.length / 6);
-	const currentPage = router.query?.page ?? 1;
+	const currentPage = router.query.page ? router.query.page[0] : 1;
 	const productsInPage = 6;
 	const products = response.slice(
 		currentPage * productsInPage - productsInPage,
@@ -21,26 +22,25 @@ export function HomePage({ response }) {
 		const page = number + 1;
 
 		return (
-			<Styles.PaginationLink
-				key={page}
-				href={`/${page}`}
-				$currentPage={currentPage}
-			>
-				<a>{page}</a>
-			</Styles.PaginationLink>
+			<Link key={page} href={`/${page}`} passHref>
+				<Styles.PaginationLink $currentPage={currentPage}>
+					{page}
+				</Styles.PaginationLink>
+			</Link>
 		);
 	});
 
+	if (currentPage > numberOfPages || currentPage === "0")
+		return (
+			<ErrorMessage>
+				The page does not exist, please return to the valid page
+				<br />
+				Valid pages: from 1 to {numberOfPages}
+			</ErrorMessage>
+		);
+
 	return (
 		<Styles.Products>
-			{currentPage > numberOfPages && (
-				<ErrorMessage>
-					The page does not exist, please return to the valid page
-					<br />
-					Valid pages: from 1 to {numberOfPages}
-				</ErrorMessage>
-			)}
-
 			<Styles.ProductsList>{productsList}</Styles.ProductsList>
 			<Styles.Pagination>{paginationList}</Styles.Pagination>
 		</Styles.Products>

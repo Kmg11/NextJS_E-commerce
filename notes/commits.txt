@@ -203,3 +203,11 @@ Fixes
 ----------------------- Finish Project -----------------------
 
 Uninstall axios package
+
+----------------------- Fix Problems -----------------------
+
+Fix Problems
+
+- Fix Next Link Problem
+- Fix Home Page Pagination Problem
+- Add crossOrigin to font

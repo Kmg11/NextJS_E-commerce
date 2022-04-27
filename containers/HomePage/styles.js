@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styled from "styled-components";
 
 export const Products = styled.section``;
@@ -16,7 +15,7 @@ export const Pagination = styled.section`
 	margin-bottom: 50px;
 `;
 
-export const PaginationLink = styled(Link)`
+export const PaginationLink = styled.a`
 	display: block;
 	width: 30px;
 	height: 30px;

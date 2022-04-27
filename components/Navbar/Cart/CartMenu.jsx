@@ -38,13 +38,11 @@ export function CartMenu({ isModelOpen, toggleModel }) {
 						<Styles.ProductsList>{productsList}</Styles.ProductsList>
 						<Styles.Total>Total price: EGP {totalPrice}</Styles.Total>
 
-						<Styles.CheckoutButton
-							as={Link}
-							href={ROUTES.cart}
-							onClick={() => toggleModel(false)}
-						>
-							<a>Checkout</a>
-						</Styles.CheckoutButton>
+						<Link href={ROUTES.cart} passHref>
+							<Styles.CheckoutButton onClick={() => toggleModel(false)}>
+								<a>Checkout</a>
+							</Styles.CheckoutButton>
+						</Link>
 					</>
 				)}
 			</Styles.CartMenu>

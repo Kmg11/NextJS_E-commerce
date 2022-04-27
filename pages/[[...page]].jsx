@@ -22,3 +22,10 @@ export async function getStaticProps() {
 		props: { data: products },
 	};
 }
+
+export async function getStaticPaths() {
+	return {
+		paths: [],
+		fallback: "blocking",
+	};
+}
